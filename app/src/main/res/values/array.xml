@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="attendance_options_array">
+        <item>Present</item>
+        <item>Absent</item>
+        <item>Late</item>
+        <item>Unknown</item>
+    </string-array>
+</resources>

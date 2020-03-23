@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:paddingVertical="10dp">
+
+        <TextView
+            android:id="@+id/courseNameItemView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/course_name_item_view_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/extendedCourseNameItemView"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="@string/extended_course_name_item_view_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/courseNumberItemView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/courseNameItemView" />
+
+        <TextView
+            android:id="@+id/courseNumberItemView"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:text="@string/course_number_item_view_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintStart_toEndOf="@+id/extendedCourseNameItemView"
+            app:layout_constraintEnd_toStartOf="@+id/numberOfStudentsItemView"
+            app:layout_constraintTop_toBottomOf="@+id/courseNameItemView"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/numberOfStudentsItemView"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="@string/number_of_students_item_view_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/courseDaysItemView"
+            app:layout_constraintStart_toEndOf="@+id/courseNumberItemView"
+            app:layout_constraintTop_toBottomOf="@+id/courseNameItemView" />
+
+        <TextView
+            android:id="@+id/courseDaysItemView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/course_days_item_view_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/attendanceItemView"
+            app:layout_constraintStart_toEndOf="@+id/numberOfStudentsItemView"
+            app:layout_constraintTop_toBottomOf="@+id/courseNameItemView" />
+
+        <TextView
+            android:id="@+id/attendanceItemView"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:text="@string/attendance_item_view_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintStart_toEndOf="@+id/courseDaysItemView"
+            app:layout_constraintEnd_toStartOf="@+id/lateRateItemView"
+            app:layout_constraintTop_toBottomOf="@+id/courseNameItemView"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/lateRateItemView"
+            android:layout_width="82dp"
+            android:layout_height="wrap_content"
+            android:text="@string/late_rate_item_view_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/attendanceItemView"
+            app:layout_constraintTop_toBottomOf="@+id/courseNameItemView"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

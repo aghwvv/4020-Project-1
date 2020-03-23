@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Simple Roll Call</string>
+    <string name="extended_course_name_item_view_text">Extended Course Name View</string>
+    <string name="course_name_item_view_text">Course Name View</string>
+    <string name="course_number_item_view_text">Course Number View</string>
+    <string name="number_of_students_item_view_text">Number of Students View</string>
+    <string name="course_days_item_view_text">Course Days View</string>
+    <string name="attendance_item_view_text">Attendance View</string>
+    <string name="late_rate_item_view_text">Late Rate View</string>
+    <string name="student_name_item_view_text">Student Name</string>
+    <string name="reset_button_text">Reset</string>
+</resources>
